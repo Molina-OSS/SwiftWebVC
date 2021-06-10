@@ -40,7 +40,7 @@ public class SwiftModalWebVC: UINavigationController {
         self.init(request: URLRequest(url: pageURL), theme: theme, dismissButtonStyle: dismissButtonStyle, sharingEnabled: sharingEnabled)
     }
 
-    public init(htmlString: String, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate) {
+    public init(htmlString: String, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate? = nil) {
         let webViewController = SwiftWebVC(html: htmlString, uiDelegate: uiDelegate)
         webViewController.sharingEnabled = sharingEnabled
         webViewController.storedStatusColor = UINavigationBar.appearance().barStyle
@@ -78,8 +78,8 @@ public class SwiftModalWebVC: UINavigationController {
         super.init(rootViewController: webViewController)
     }
     
-    public init(request: URLRequest, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true) {
-        let webViewController = SwiftWebVC(aRequest: request)
+    public init(request: URLRequest, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate? = nil) {
+        let webViewController = SwiftWebVC(aRequest: request, uiDelegate: uiDelegate)
         webViewController.sharingEnabled = sharingEnabled
         webViewController.storedStatusColor = UINavigationBar.appearance().barStyle
         

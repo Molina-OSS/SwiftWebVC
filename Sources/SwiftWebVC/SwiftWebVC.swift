@@ -80,6 +80,8 @@ open class SwiftWebVC: UIViewController {
     var navBarTitle: UILabel!
     
     var sharingEnabled = true
+
+    weak var uiDelegate: WKUIDelegate?
     
     ////////////////////////////////////////////////
     
@@ -106,26 +108,28 @@ open class SwiftWebVC: UIViewController {
         self.init()
         self.sharingEnabled = sharingEnabled
         self.request = aRequest
-        if let uiDelegate = uiDelegate {
-            self.webView.uiDelegate = uiDelegate
-        }
+        self.uiDelegate = uiDelegate
     }
 
     public convenience init(html: String, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate? = nil) {
         self.init()
         self.sharingEnabled = sharingEnabled
         self.html = html
-        if let uiDelegate = uiDelegate {
-            self.webView.uiDelegate = uiDelegate
-        }
+        self.uiDelegate = uiDelegate
     }
     
     func loadRequest(_ request: URLRequest) {
         webView.load(request)
+        if let uiDelegate = self.uiDelegate {
+            self.webView.uiDelegate = uiDelegate
+        }
     }
 
     func loadHTMLString(_ html: String) {
         webView.loadHTMLString(html, baseURL: nil)
+        if let uiDelegate = self.uiDelegate {
+            self.webView.uiDelegate = uiDelegate
+        }
     }
     
     ////////////////////////////////////////////////
