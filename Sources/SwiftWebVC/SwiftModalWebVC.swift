@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 public class SwiftModalWebVC: UINavigationController {
     
@@ -39,8 +40,8 @@ public class SwiftModalWebVC: UINavigationController {
         self.init(request: URLRequest(url: pageURL), theme: theme, dismissButtonStyle: dismissButtonStyle, sharingEnabled: sharingEnabled)
     }
 
-    public init(htmlString: String, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true) {
-        let webViewController = SwiftWebVC(html: htmlString)
+    public init(htmlString: String, theme: SwiftModalWebVCTheme = .lightBlue, dismissButtonStyle: SwiftModalWebVCDismissButtonStyle = .arrow, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate) {
+        let webViewController = SwiftWebVC(html: htmlString, uiDelegate: uiDelegate)
         webViewController.sharingEnabled = sharingEnabled
         webViewController.storedStatusColor = UINavigationBar.appearance().barStyle
 

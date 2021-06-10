@@ -13,9 +13,7 @@
 		00FFF8601E09977500015C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF85F1E09977500015C59 /* Assets.xcassets */; };
 		00FFF8631E09977500015C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF8611E09977500015C59 /* LaunchScreen.storyboard */; };
 		551722AF26729B5900F28CC3 /* SwiftWebVCActivityChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517229B26729B5900F28CC3 /* SwiftWebVCActivityChrome.swift */; };
-		551722B026729B5900F28CC3 /* SwiftWebVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5517229D26729B5900F28CC3 /* SwiftWebVC.strings */; };
 		551722B126729B5900F28CC3 /* SwiftWebVCActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551722A926729B5900F28CC3 /* SwiftWebVCActivity.swift */; };
-		551722B226729B5900F28CC3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551722AB26729B5900F28CC3 /* Media.xcassets */; };
 		551722B326729B5900F28CC3 /* SwiftModalWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551722AC26729B5900F28CC3 /* SwiftModalWebVC.swift */; };
 		551722B426729B5900F28CC3 /* SwiftWebVCActivitySafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551722AD26729B5900F28CC3 /* SwiftWebVCActivitySafari.swift */; };
 		551722B526729B5900F28CC3 /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551722AE26729B5900F28CC3 /* SwiftWebVC.swift */; };
@@ -30,19 +28,7 @@
 		00FFF8621E09977500015C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FFF8641E09977500015C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5517229B26729B5900F28CC3 /* SwiftWebVCActivityChrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivityChrome.swift; sourceTree = "<group>"; };
-		5517229E26729B5900F28CC3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		5517229F26729B5900F28CC3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SwiftWebVC.strings"; sourceTree = "<group>"; };
-		551722A026729B5900F28CC3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A126729B5900F28CC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A226729B5900F28CC3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A326729B5900F28CC3 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A426729B5900F28CC3 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/SwiftWebVC.strings"; sourceTree = "<group>"; };
-		551722A526729B5900F28CC3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SwiftWebVC.strings"; sourceTree = "<group>"; };
-		551722A626729B5900F28CC3 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A726729B5900F28CC3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
-		551722A826729B5900F28CC3 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
 		551722A926729B5900F28CC3 /* SwiftWebVCActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivity.swift; sourceTree = "<group>"; };
-		551722AB26729B5900F28CC3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		551722AC26729B5900F28CC3 /* SwiftModalWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModalWebVC.swift; sourceTree = "<group>"; };
 		551722AD26729B5900F28CC3 /* SwiftWebVCActivitySafari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivitySafari.swift; sourceTree = "<group>"; };
 		551722AE26729B5900F28CC3 /* SwiftWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVC.swift; sourceTree = "<group>"; };
@@ -106,26 +92,8 @@
 				551722A926729B5900F28CC3 /* SwiftWebVCActivity.swift */,
 				5517229B26729B5900F28CC3 /* SwiftWebVCActivityChrome.swift */,
 				551722AD26729B5900F28CC3 /* SwiftWebVCActivitySafari.swift */,
-				551722AA26729B5900F28CC3 /* Resources */,
-				5517229C26729B5900F28CC3 /* Strings */,
 			);
 			path = SwiftWebVC;
-			sourceTree = "<group>";
-		};
-		5517229C26729B5900F28CC3 /* Strings */ = {
-			isa = PBXGroup;
-			children = (
-				5517229D26729B5900F28CC3 /* SwiftWebVC.strings */,
-			);
-			path = Strings;
-			sourceTree = "<group>";
-		};
-		551722AA26729B5900F28CC3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				551722AB26729B5900F28CC3 /* Media.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551722B226729B5900F28CC3 /* Media.xcassets in Resources */,
 				00FFF8631E09977500015C59 /* LaunchScreen.storyboard in Resources */,
 				00FFF8601E09977500015C59 /* Assets.xcassets in Resources */,
-				551722B026729B5900F28CC3 /* SwiftWebVC.strings in Resources */,
 				00FFF85E1E09977500015C59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,24 +207,6 @@
 				00FFF8621E09977500015C59 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5517229D26729B5900F28CC3 /* SwiftWebVC.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5517229E26729B5900F28CC3 /* de */,
-				5517229F26729B5900F28CC3 /* zh-Hans */,
-				551722A026729B5900F28CC3 /* ja */,
-				551722A126729B5900F28CC3 /* en */,
-				551722A226729B5900F28CC3 /* es */,
-				551722A326729B5900F28CC3 /* da */,
-				551722A426729B5900F28CC3 /* es-ES */,
-				551722A526729B5900F28CC3 /* zh-Hant */,
-				551722A626729B5900F28CC3 /* vi */,
-				551722A726729B5900F28CC3 /* fr */,
-				551722A826729B5900F28CC3 /* pt */,
-			);
-			name = SwiftWebVC.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
