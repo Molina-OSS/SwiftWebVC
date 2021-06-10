@@ -13,7 +13,7 @@ public protocol SwiftWebVCDelegate: class {
     func didFinishLoading(success: Bool)
 }
 
-public class SwiftWebVC: UIViewController {
+open class SwiftWebVC: UIViewController {
     
     public weak var delegate: SwiftWebVCDelegate?
     var storedStatusColor: UIBarStyle?
@@ -102,16 +102,22 @@ public class SwiftWebVC: UIViewController {
         self.init(aRequest: URLRequest(url: pageURL), sharingEnabled: sharingEnabled)
     }
     
-    public convenience init(aRequest: URLRequest, sharingEnabled: Bool = true) {
+    public convenience init(aRequest: URLRequest, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate? = nil) {
         self.init()
         self.sharingEnabled = sharingEnabled
         self.request = aRequest
+        if let uiDelegate = uiDelegate {
+            self.webView.uiDelegate = uiDelegate
+        }
     }
 
-    public convenience init(html: String, sharingEnabled: Bool = true) {
+    public convenience init(html: String, sharingEnabled: Bool = true, uiDelegate: WKUIDelegate? = nil) {
         self.init()
         self.sharingEnabled = sharingEnabled
         self.html = html
+        if let uiDelegate = uiDelegate {
+            self.webView.uiDelegate = uiDelegate
+        }
     }
     
     func loadRequest(_ request: URLRequest) {
